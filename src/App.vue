@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <TheHeader />
+    <main>
     <router-view />
+    </main>
     <TheFooter />
   </div>
 </template>
@@ -41,6 +43,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #345;
   background: url('./assets/pattern.svg') repeat top;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 a {
