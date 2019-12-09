@@ -1,0 +1,46 @@
+{
+    "usuario": 
+    [
+        {
+            "id": "leo@gmail.com",
+            "email": "leo@gmail.com",
+            "nome": "Leonardo Cesca",
+            "senha": "123",
+            "rua": "Rua Ali Perto",
+            "cep": "12345678",
+            "numero": "25",
+            "estado": "RS",
+            "cidade": "Porto Alegre"
+        }
+    ],
+    "produto": 
+    [
+        {
+            "id": "notebook",
+            "nome": "notebook",
+            "usuario_id": "leo@gmail.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Esse é um novo notebook.",
+            "fotos": []
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": []
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": []
+        }
+    ]
+}
