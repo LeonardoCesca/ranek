@@ -84,4 +84,18 @@ img {
   background: #65d;
   transform: scale(1.1);
 } 
+
+input:hover,
+input:focus,
+textarea:hover
+textarea:focus {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(30,60,90,0.1);
+  transition: all .3s;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+}
 </style>
