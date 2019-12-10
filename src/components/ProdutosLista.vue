@@ -22,9 +22,24 @@ export default {
       produtos: null
     };
   },
+  computed: {
+    url() {
+      let queryString = "";
+      for(let key in this.$route.query) {
+        queryString += `&${key}=${this.$route.query[key]}`
+      }
+      return "/produto?_limit=10" + queryString;
+    }
+
+  },
+  watch: {
+    url() {
+      this.getProdutos();
+    }
+  },
   methods: {
     getProdutos() {
-      api.get("/produto").then(response => {
+      api.get(this.url).then(response => {
         this.produtos = response.data;
       });
     }
