@@ -15,22 +15,20 @@
 
 <script>
 import { api } from "@/services/services.js";
+import { serialize } from "@/utils/helpers.js";
 
 export default {
   data() {
     return {
-      produtos: null
+      produtos: null,
+      produtosPagina: 9,
     };
   },
   computed: {
     url() {
-      let queryString = "";
-      for(let key in this.$route.query) {
-        queryString += `&${key}=${this.$route.query[key]}`
-      }
-      return "/produto?_limit=10" + queryString;
+      const query = serialize(this.$route.query);
+      return `/produto?_limit=${this.produtosPagina}${query}`;
     }
-
   },
   watch: {
     url() {
