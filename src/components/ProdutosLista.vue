@@ -13,29 +13,34 @@
           <p>{{ produto.descricao }}</p>
         </router-link>
       </div>
-      <ProdutosPaginar :produtosTotal="produtosTotal" :produtosPorPagina="produtosPorPagina"/>
+      <ProdutosPaginar
+        :produtosTotal="produtosTotal"
+        :produtosPagina="produtosPagina"
+      />
     </div>
     <div v-else-if="produtos && produtos.length === 0">
-      <p class="sem-resultados">Busca sem resultados. Tente buscar outro termo.</p>
+      <p class="sem-resultados">
+        Busca sem resultados. Tente buscar outro termo.
+      </p>
     </div>
   </section>
 </template>
 
 <script>
-import ProdutosPaginar from '@/components/ProdutosPaginar.vue';
+import ProdutosPaginar from "@/components/ProdutosPaginar.vue";
 import { api } from "@/services/services.js";
 import { serialize } from "@/utils/helpers.js";
 
 export default {
   name: "ProdutosLista",
   components: {
-    ProdutosPaginar,
+    ProdutosPaginar
   },
   data() {
     return {
       produtos: null,
       produtosPagina: 9,
-      produtosTotal: 0,
+      produtosTotal: 0
     };
   },
   computed: {
@@ -52,8 +57,8 @@ export default {
   methods: {
     getProdutos() {
       api.get(this.url).then(response => {
-      this.produtosTotal = Number(response.headers['x-total-count']);
-      this.produtos = response.data;
+        this.produtosTotal = Number(response.headers["x-total-count"]);
+        this.produtos = response.data;
       });
     }
   },
@@ -64,7 +69,6 @@ export default {
 </script>
 
 <style scoped>
-
 .produtos-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -78,18 +82,18 @@ export default {
 }
 
 .produto {
-  box-shadow: 0 4px 8px rgba(30,60,90,.1);
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
   padding: 10px;
   background: #fff;
   border-radius: 4px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .produto:hover {
-    box-shadow: 0 6px 12px rgba(30,60,90,.2);
-    transform: scale(1.1);
-    position: relative;
-    z-index: 1;
+  box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+  transform: scale(1.1);
+  position: relative;
+  z-index: 1;
 }
 
 .produto img {
