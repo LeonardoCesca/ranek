@@ -3,7 +3,7 @@
     <p>Paginas {{ paginasTotal }}</p>
     <ul>
       <li v-for="pagina in paginasTotal" :key="pagina">
-        <router-link :to="{ query: { _page: pagina } }">
+        <router-link :to="{ query: query(pagina) }">
           {{ pagina }}
         </router-link>
       </li>
@@ -22,6 +22,14 @@ export default {
       type: Number,
       default: 1
     }
+  },
+  methods: {
+      query(pagina) {
+        return {
+            ...this.$route.query,
+            _page: pagina
+        }      
+      }
   },
   computed: {
     paginasTotal() {
