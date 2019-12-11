@@ -2,7 +2,11 @@
   <div>
     <p>Paginas {{ paginasTotal }}</p>
     <ul>
-      <li><router-link :to="{ query: { _page: 1 } }">1</router-link></li>
+      <li v-for="pagina in paginasTotal" :key="pagina">
+        <router-link :to="{ query: { _page: pagina } }">
+          {{ pagina }}
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -22,7 +26,7 @@ export default {
   computed: {
     paginasTotal() {
       const total = this.produtosTotal / this.produtosPagina;
-      return Math.ceil(total);
+      return total !== Infinity ? Math.ceil(total) : 0;
     }
   }
 };
