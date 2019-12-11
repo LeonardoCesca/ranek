@@ -41,6 +41,150 @@
             "vendido": "false",
             "descricao": "Esse é um novo tablet.",
             "fotos": null
+        },
+        {
+            "id": "notebook",
+            "nome": "notebook",
+            "usuario_id": "leo@gmail.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Esse é um novo notebook.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
+        },
+        {
+            "id": "notebook",
+            "nome": "notebook",
+            "usuario_id": "leo@gmail.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Esse é um novo notebook.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
+        },
+        {
+            "id": "notebook",
+            "nome": "notebook",
+            "usuario_id": "leo@gmail.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Esse é um novo notebook.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
+        },
+        {
+            "id": "notebook",
+            "nome": "notebook",
+            "usuario_id": "leo@gmail.com",
+            "preco": "4999",
+            "vendido": "false",
+            "descricao": "Esse é um novo notebook.",
+            "fotos": null
+        },
+        {
+            "id": "smartphone",
+            "nome": "smartphone",
+            "usuario_id": "leo@gmail.com",
+            "preco": "1999",
+            "vendido": "false",
+            "descricao": "Esse é um novo smartphone.",
+            "fotos": null
+        },
+        {
+            "id": "tablet",
+            "nome": "tablet",
+            "usuario_id": "leo@gmail.com",
+            "preco": "3999",
+            "vendido": "false",
+            "descricao": "Esse é um novo tablet.",
+            "fotos": null
         }
     ]
 }
