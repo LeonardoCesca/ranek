@@ -1,4 +1,4 @@
-# ranek
+# ranek (Origamid)
 
 ## Project setup
 ```
