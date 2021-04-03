@@ -98,4 +98,22 @@ textarea:focus {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
 }
+
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-enter {
+  transform: translate3d(0, -20px, 0);
+}
+
+.v-leave-to {
+  transform: translate3d(0, 20px, 0);
+}
+
+.v-enter-active, 
+.v-leave-active {
+  transition: all .3s;
+}
 </style>
