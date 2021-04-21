@@ -85,6 +85,10 @@ img {
   transform: scale(1.1);
 } 
 
+label {
+  margin-bottom: 5px;
+}
+
 input:hover,
 input:focus,
 textarea:hover
